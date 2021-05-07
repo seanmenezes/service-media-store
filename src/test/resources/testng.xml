@@ -1,0 +1,30 @@
+<!--
+  ~ (c) 2020 Pluto Inc.
+  -->
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="API - Media Store Service Test Suite" parallel="classes" thread-count="20" verbose="1">
+
+    <parameter name="Environment" value="${env}"/>
+    <parameter name="TestCategory" value="Functional"/>
+
+    <test name="API - Media Store Service Functional Test">
+        <groups>
+            <run>
+                <include name="full"/>
+                <include name="v2channels_delta_update"/>
+                <include name="use_mongo"/>
+                <exclude name="issues"/>
+                <exclude name="adv_cat"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.plutotv.test.*"/>
+        </packages>
+    </test>
+    <listeners>
+        <listener class-name="com.plutotv.test.listeners.AllureReporterListener"/>
+        <listener class-name="com.plutotv.test.listeners.TestRailReporterListener"/>
+        <listener class-name="com.plutotv.test.listeners.TestNGRunnerListener"/>
+    </listeners>
+</suite>

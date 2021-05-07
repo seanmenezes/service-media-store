@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.plutotv.testframework:test-drivers:2.0.144">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/plutotv/testframework/test-drivers/2.0.144/test-drivers-2.0.144.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/plutotv/testframework/test-drivers/2.0.144/test-drivers-2.0.144-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/plutotv/testframework/test-drivers/2.0.144/test-drivers-2.0.144-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
